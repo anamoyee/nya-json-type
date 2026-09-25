@@ -1,7 +1,7 @@
 [project]
 name            = 'nya-json-type'
 dynamic         = ['version']
-description     = 'Provide as Json type that is defined as follows: type Json = dict[str, Json] | list[Json] | str | int | float | bool | None'
+description     = 'Provide a Json type that is defined as follows: type Json = dict[str, Json] | list[Json] | str | int | float | bool | None'
 readme          = "README.md"
 requires-python = ">=3.12"
 dependencies    = []

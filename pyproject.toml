@@ -1,18 +1,21 @@
 [project]
-name = 'nya-json-type'
-dynamic = ['version']
-description = 'Provide the Json type that is defined as follows: type Json = dict[str, Json] | list[Json] | str | int | float | bool | None'
-readme = "README.md"
+name            = 'nya-json-type'
+dynamic         = ['version']
+description     = 'Provide as Json type that is defined as follows: type Json = dict[str, Json] | list[Json] | str | int | float | bool | None'
+readme          = "README.md"
 requires-python = ">=3.12"
-dependencies = []
-
-# [project.scripts]
-# nya_json_type = "nya_json_type.__main__:main"
+dependencies    = []
 
 [build-system]
-requires = ["hatchling"]
+requires      = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.version]
-path = "src/nya_json_type/_version.py"
+path    = "src/nya_json_type/_version.py"
 pattern = '__version__(?:: str)? *= *\"(?P<version>[^\"]+)\"'
+
+[dependency-groups]
+dev = [ #
+	"pre-commit>=4.6.2",
+	"ty>=0.0.84",
+]

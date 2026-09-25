@@ -13,7 +13,7 @@ This type is supposed to be a typed return value of the builtin library `json`'s
 import json
 from nya_json_type import Json
 
-x: Json = json.load("data.json")
+x: Json = json.load(open("data.json"))
 ```
 
 ## Motivation

@@ -23,7 +23,8 @@
                     [
                         {
                             "id": "ruff-check",
-                            "args": ["--ignore", "line-contains-todo"],
+                            "args":
+                                ["--preview", "--ignore", "line-contains-todo"],
                         },
                         { "id": "ruff-format" },
                     ],
